@@ -1,0 +1,11 @@
+{
+  "name": "ajo-protocol",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.3"
+  }
+}
