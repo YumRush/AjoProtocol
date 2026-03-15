@@ -1,7 +1,7 @@
-import express from "express";
+import { Router } from "express";
 import { stellarServer } from "../config/stellar";
 
-const router = express.Router();
+const router = Router();
 
 router.get("/ping", async (_req, res) => {
   try {
@@ -12,13 +12,15 @@ router.get("/ping", async (_req, res) => {
     return res.json({
       ok: true,
       horizon: "connected",
-      sequence: account.sequence,
+      sequence: account.sequence
     });
-  } catch (err) {
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+
     return res.status(500).json({
       ok: false,
       message: "Failed to connect to Stellar Horizon",
-      error: err.message,
+      error: message
     });
   }
 });
