@@ -1,0 +1,15 @@
+{
+  "name": "@ajoprotocol/config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./tsconfig": "./tsconfig.json",
+    "./eslint": "./.eslintrc.js",
+    "./prettier": "./.prettierrc"
+  },
+  "files": [
+    "tsconfig.json",
+    ".eslintrc.js",
+    ".prettierrc"
+  ]
+}

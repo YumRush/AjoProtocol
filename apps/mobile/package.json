@@ -1,0 +1,10 @@
+{
+  "name": "@ajoprotocol/mobile",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Mobile app not initialized yet'",
+    "build": "echo 'Mobile build not initialized yet'",
+    "lint": "eslint . --ext .ts,.tsx"
+  }
+}
